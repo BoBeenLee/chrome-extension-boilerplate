@@ -1,4 +1,4 @@
-# Chrome Extension (built with TypeScript + React)
+# Chrome Extension (built with TypeScript + React + Styled-Components)
 
 > This project is a boilerplate project to allow you to quickly build chrome extensions using TypeScript and React.
 
