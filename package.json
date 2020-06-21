@@ -1,0 +1,52 @@
+{
+  "name": "chrome-extension-react-typescript-boilerplate",
+  "version": "1.1.0",
+  "description": "A boilerplate project to quickly build a Chrome extension using TypeScript and React (built using webpack).",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --config webpack.prod.js",
+    "dev": "NODE_ENV=development webpack --config webpack.dev.js",
+    "watch": "NODE_ENV=development webpack -w --config webpack.dev.js",
+    "type-check": "tsc --noEmit",
+    "prettier": "prettier './src/**/*.{js,ts,tsx}' --write",
+    "eslint": "./node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx ./src",
+    "eslint:fix": "./node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx ./src --fix"
+  },
+  "author": "BBB",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@types/chrome": "0.0.116",
+    "@types/react": "16.9.38",
+    "@types/react-dom": "16.9.8",
+    "@types/styled-components": "^5.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-react-app": "^9.1.2",
+    "css-loader": "^3.4.2",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "ts-loader": "^4.0.1",
+    "typescript": "3.9.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prettier": "^2.0.5"
+  }
+}
