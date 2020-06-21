@@ -9,7 +9,10 @@
     "type-check": "tsc --noEmit",
     "prettier": "prettier './src/**/*.{js,ts,tsx}' --write",
     "eslint": "./node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx ./src",
-    "eslint:fix": "./node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx ./src --fix"
+    "eslint:fix": "./node_modules/.bin/eslint --ext .js,.jsx,.ts,.tsx ./src --fix",
+    "storybook": "export NODE_PATH=/ && start-storybook -p 9009 -s public",
+    "storybook:build": "export NODE_PATH=/ && build-storybook -c .storybook -s public -o ./storybook-static",
+    "storybook:deploy": "export NODE_PATH=/ && storybook-to-ghpages -o ./storybook-static -c .storybook"
   },
   "author": "BBB",
   "license": "MIT",
@@ -23,6 +26,14 @@
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/preset-env": "^7.9.5",
+    "@storybook/addon-actions": "^5.3.14",
+    "@storybook/addon-info": "^5.3.14",
+    "@storybook/addon-knobs": "^5.3.14",
+    "@storybook/addon-links": "^5.3.14",
+    "@storybook/addon-notes": "^5.3.14",
+    "@storybook/addons": "^5.3.14",
+    "@storybook/react": "^5.3.17",
+    "@storybook/storybook-deployer": "^2.8.1",
     "@types/chrome": "0.0.116",
     "@types/react": "16.9.38",
     "@types/react-dom": "16.9.8",
@@ -47,5 +58,10 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "prettier": "^2.0.5"
+  },
+  "storybook-deployer": {
+    "gitUsername": "GH Pages Bot",
+    "gitEmail": "cultist_tp@naver.com",
+    "commitMessage": "Deploy Storybook to GitHub Pages"
   }
 }
