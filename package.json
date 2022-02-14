@@ -45,7 +45,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-react-app": "^9.1.2",
     "css-loader": "^3.4.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "typescript": "3.9.5",
